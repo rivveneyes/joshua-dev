@@ -8,6 +8,7 @@
     <meta name="author" content="Joshua Garcia">
     <link rel="stylesheet" href="reset-style.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-breaks.css">
     
     <title>Joshua Garcia</title>
 </head>
@@ -15,21 +16,41 @@
     <div class="header-name-display">
         <header>Joshua Garcia</header>
         <span>WEB DEVELOPER</span>
-        <!-- <div class="header-links">This Will two links  linkedin?github</div> -->
     </div>
     <main>
-    <div class="about-me-container">
-            <h1>Responsive web design aar things dfaunr ddont forget this stuff.           
-            </h1>
-            <img src="imgs/joshua-protrate.jpg" alt="joshua portrate" id="portrate">
-
+        <div class="about-me-container">
+            <div>
+            <h1>I'm a self taught web developer.</h1>
+            <div class="links-container">
+                <a href="https://github.com/rivveneyes" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/joshua-garica-04351520b/" target="_blank">Linkin</a>
+            </div>
         </div>
+        <img src="imgs/joshua-protrate.jpg" alt="joshua portrate" id="portrate">           
+    </div>
+    <div class="skill-sett-container">
+        <ul>
+            <!-- <li>&#60;HTML&#62; </li>
+            <li>&#60;HTML&#62; </li>
+            <li>&#60;HTML&#62; </li> -->
+
+
+
+            <li>&#60;HTML&#47;&#62; </li>
+        <li>&#60;CSS.scss&#47;&#62;
+
+        <li>&#60;JAVASCRIPT.jquery&#47;&#62;</li>
+
+        <li>&#60;PHP&#47;&#62;</li>
+    </ul>
+    </div>
+    
         <h2>My Work</h2>
 
         <ol class=" .work-display-container">
             <li>
                 <span>Social site</span>
-                <a href="google.com">
+                <a href="https://rivveneyes.github.io/social-media/" target="_blank">   
                 <img src="https://github.com/rivveneyes/social-media/blob/main/social.png?raw=true" alt="sample website"> </a>
             <p>One page site with web responsive and interactive compontents.More about it here <a href="https://github.com/rivveneyes">github</a>. </p></li>
 
@@ -47,18 +68,33 @@
 
 </main>
 <footer>
-<h3>Contact</h3>
-    <form action="submit">
-     <input type="text" name="" id=""> 
-     <input type="text">
-     <input type="emial"> 
-     <input type="text" name="" id=""> 
-     <button type="submit">Send</button>
-    </form>
-    <div>
-        <a href="google"><img src="imgs/fb-logo.png" alt="link to facebook"></a>
-        <a href="google"><img src="imgs/twiter-logo.png" alt="link to linkin"></a>
+
+    <h3>Contact</h3>
+    <div class="form-bin">
+    <span>Message Me</span>
+    <form action="submit">  
+        <div class="form-input-container">
+     <label for="first-name">First Name</label>
+     <input type="text" name="first-name" id="first-name" placeholder="first name">
     </div>
+    <div class="form-input-container">
+     <label for="last-name">Last Name</label>
+     <input type="text" name="last-name" id="last-name" placeholder="last name">
+    </div>
+    <div class="form-input-container">
+     <label for="email">Email</label>
+     <input type="emial" name="email" id="email" placeholder="email"> 
+    </div>
+    <div class="form-input-container">
+        <label for="">Message</label>
+        <input type="text" name="message" id="message" placeholder="message">
+    </div>
+    <button type="submit">Send</button>
+</form>
+</div>
+
 </footer>
+
+
 </body>
 </html>
