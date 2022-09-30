@@ -1,0 +1,33 @@
+@media (min-width: 800px) {
+    html{
+        font-size: 20px;
+    }
+    
+    .header-name-display{
+   text-align: left;
+    }
+    .header-name-display span{
+        display: inline-block;
+        margin-left: 90px;
+    }
+
+/* ========MAIN========= */
+    .box-flex{
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem 0px;
+    }
+    .about-me-container{
+        margin: 1rem 0;
+        flex-direction: column-reverse;
+    }
+    #portrate{
+        height: 180px;
+    }
+    h1{
+        border: none;
+    }
+    li span{
+        font-size: 1.1rem;
+    }
+}

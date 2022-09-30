@@ -5,94 +5,122 @@
 	font-family: 'Ubuntu Mono', monospace, 'Segoe UI' ;
 
 }
+html{
+    font-size: 18px;
+}
 
 .header-name-display{
-    margin: 5px;
-    margin-bottom: 50px;
+    margin: 2rem;
     text-align: center;
-    /* background-color: yellow; */
 }
 .header-name-display header{
-    font-size: 35px;
-    margin-bottom: 3px;
+    font-size: 2.5rem;
 }
 .header-name-display span{
-    font-size: 15px;
-    display: block;
-    border-bottom: 1px solid black;
-    background-color: whitesmoke;
+    font-size: 1rem;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
 }
-.header-links{
-    margin-top: 20px;
-    background-color: orange;
-}
+
+
 
 /* =======////main============ */
 
+.box-flex{
+    padding: .5rem;
+    background-color: whitesmoke;
+
+}
+
 .about-me-container{
-    height: 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: whitesmoke;
-    border: 2px solid silver;
-    border-bottom: 0px;
 }
 
+
+
 h1{ 
-    padding:  25px 5px;
-    margin-right: 15px;
-    font-size: 20px;
+    padding: 1.5rem 0;
+    margin-right: 1rem;
+    font-size: 1.2rem;
     border-right:2px solid black ;
 
 }
 #portrate{
-    height: 100%;
+    height: 130px;
     width: auto;
-    border-radius: 5px;
+    border-radius: .5rem;
+}
+.links-container{
+    text-align: right;
+    padding-right:1rem ;
+}
+.links-container a{
+    font-size: 1rem;
 }
 
+.work-display-box{
+    padding: 4rem 0;
+}
+
+.skill-sett-container{
+    padding-top: 2rem;
+}
+.skill-sett-container span{
+display: block;
+text-align: center;
+margin-bottom: 1rem;
+font-size:2rem;
+}
+.skill-sett-container ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 350px;
+    margin: auto;
+}
+
+.skill-sett-container li{
+    font-size: 1rem;
+    border-radius: 5rem;
+    padding: 5px 10px;
+    margin-right: 1rem;
+    margin-bottom: .5rem;
+    background-color: white;
+}
 h2{
-    font-size: 30px;
-    padding-bottom: 10px;
-    margin: 30px 30px 20px;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;   
     text-align: center;
-    border-bottom: 2px solid black;   
 }
 
 ol{
-    background-color: whitesmoke;
-    border: 2px solid gray;
     display: flex;
     justify-content: space-around;
-    padding: 5px;
 }
 
 ol li{
     width: 45%;
-    
 }
 li img{
-    padding: 3px;
-    border: 2px solid black;
+    padding: 5px;
+    border: 1px solid black;
     height: auto;
     width: 100%;
+    margin-top: 5px;
 }
 li p{
     margin-top: 5px;
-    font-size: 18px;
-    text-indent: 10px;
-    line-height: 1.3;
-}
-
-footer{
-    margin-top: 50px;
+    font-size: 1rem;
+    text-indent: 1rem;
+    line-height: 1.2rem;
 }
 h3{
-    font-size: 30px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-
+    font-size: 2rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
     border-bottom: 3px solid black;
 }
 .form-bin{
@@ -105,18 +133,18 @@ h3{
     border-radius: 5px;
 }   
    form{
-margin:20px 5px;
+margin:1rem 5px;
    }
 
 .form-input-container{
-    padding: 5px;
+    padding: 10px;
     display: flex;
     
 }
 form label {
-    width: 35%;
+    width: 45%;
     display: block;
-    margin-right: 20px;
+    margin-right: 5px;
 
 }
 form input{
@@ -128,52 +156,12 @@ form input{
 }
 form button{
     border: none;
-    padding: 5px 10px;
-    margin-top: 20px;
+    padding: .5rem 1rem;
+    margin-top: 1rem;
     border-radius: 5px;
 }
-
-.links-container{
-    text-align: right;
-    padding-right:20px ;
-}
-.links-container a{
-    font-size: 18px;
-}
-
-
-
-
-
-
-
-
 
 
 
 
 /* ===============//================== */
-.skill-sett-container{
-    padding: 5px;
-    padding-top: 30px;
-    background-color: whitesmoke;
-    border: 2px solid silver;
-    border-top: 0;
-}
-.skill-sett-container ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 350px;
-    margin: auto;
-    /* background-color: rebeccapurple; */
-}
-
-.skill-sett-container li{
-    font-size: 18px;
-    border-radius: 10px;
-    padding: 5px 10px;
-    margin-right: 2px;
-    margin-bottom: 8px;
-    background-color: white;
-}
