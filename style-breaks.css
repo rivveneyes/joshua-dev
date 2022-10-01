@@ -2,11 +2,15 @@
     html{
         font-size: 20px;
     }
+    body{
+        max-width: 1400px;
+        margin: auto;
+    }
     
-    .header-name-display{
+.header-name-display{
    text-align: left;
     }
-    .header-name-display span{
+    .header-name-display >span{
         display: inline-block;
         margin-left: 90px;
     }
@@ -14,20 +18,27 @@
 /* ========MAIN========= */
     .box-flex{
         display: flex;
-        justify-content: space-around;
-        padding: 1rem 0px;
+        align-items: center;
+        padding: 1rem;
     }
     .about-me-container{
-        margin: 1rem 0;
         flex-direction: column-reverse;
     }
     #portrate{
-        height: 180px;
+        height: 200px
     }
     h1{
         border: none;
     }
+    
+    .skill-sett-container{
+        padding-top: 0;
+    }
     li span{
         font-size: 1.1rem;
+    }
+    li p{
+        font-size: 1.1rem;
+        padding: 1rem;
     }
 }

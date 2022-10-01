@@ -1,22 +1,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
-*{
+html{
 	box-sizing: border-box;
 	font-family: 'Ubuntu Mono', monospace, 'Segoe UI' ;
-
 }
 html{
     font-size: 18px;
 }
 
 .header-name-display{
-    margin: 2rem;
+    margin: 2rem 2rem 1rem;
     text-align: center;
 }
 .header-name-display header{
     font-size: 2.5rem;
 }
 .header-name-display span{
+    font-family: initial;
     font-size: 1rem;
     text-decoration: underline;
     font-style: italic;
@@ -32,6 +32,9 @@ html{
     background-color: whitesmoke;
 
 }
+.box-flex >div{
+    width: 100%;
+}
 
 .about-me-container{
     display: flex;
@@ -42,7 +45,7 @@ html{
 
 
 h1{ 
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     margin-right: 1rem;
     font-size: 1.2rem;
     border-right:2px solid black ;
@@ -55,7 +58,7 @@ h1{
 }
 .links-container{
     text-align: right;
-    padding-right:1rem ;
+    padding-right:2rem ;
 }
 .links-container a{
     font-size: 1rem;
@@ -88,11 +91,12 @@ font-size:2rem;
     padding: 5px 10px;
     margin-right: 1rem;
     margin-bottom: .5rem;
+    letter-spacing: 3px;
     background-color: white;
 }
 h2{
     font-size: 2rem;
-    margin-bottom: 1.5rem;   
+    margin-bottom: 2rem;   
     text-align: center;
 }
 
@@ -126,12 +130,15 @@ h3{
 .form-bin{
     width: 350px;
     margin: auto;
-    padding: 5px;
+    padding: 15px;
     margin-bottom: 30px;
     background-color: whitesmoke;
     border: 2px solid silver;
     border-radius: 5px;
-}   
+}  
+.form-bin span{
+    text-decoration: underline;
+} 
    form{
 margin:1rem 5px;
    }
@@ -142,7 +149,7 @@ margin:1rem 5px;
     
 }
 form label {
-    width: 45%;
+    width: 50%;
     display: block;
     margin-right: 5px;
 
