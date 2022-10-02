@@ -1,13 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
+
 html{
 	box-sizing: border-box;
 	font-family: 'Ubuntu Mono', monospace, 'Segoe UI' ;
-}
-html{
     font-size: 18px;
+    overflow-x: hidden;
 }
-
 .header-name-display{
     margin: 2rem 2rem 1rem;
     text-align: center;
@@ -103,6 +102,8 @@ h2{
 ol{
     display: flex;
     justify-content: space-around;
+    width: 95%;
+    margin: auto;
 }
 
 ol li{
@@ -149,7 +150,7 @@ margin:1rem 5px;
     
 }
 form label {
-    width: 50%;
+    width: 75%;
     display: block;
     margin-right: 5px;
 
@@ -169,6 +170,17 @@ form button{
 }
 
 
-
-
-/* ===============//================== */
+.night-main{
+    background-color: black !important;
+    color: white;
+    border-color: white;
+} 
+.night-second{
+    background-color: silver;
+}
+.dark-text{
+color: black;
+}
+.dark{
+    border-color: white !important;
+}
