@@ -1,5 +1,5 @@
 const lightingSwitch=document.getElementById('dark-mode')
-let switchOn=lightingSwitch.checked
+const switchOn=lightingSwitch.checked
 const colorlayout=document.getElementsByTagName("body")[0];
 const infoContainer=document.getElementById('info-skills');
 const skillsBubble=document.querySelectorAll('.skills-list li');
