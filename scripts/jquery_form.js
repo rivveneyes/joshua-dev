@@ -10,16 +10,12 @@ $(document).ready(function() {
          data: form.serialize(),
          success: function(result){
      if (result == 'success'){
-         $('.form-notification').text('Message Sent!');  
-     } else if(result == 'Joshua'){
-        console.log(result)
-        $('.form-notification').text('pass stepper failed!');
-     }
+         $('.form-notification').text('Message Sent!')}
      else {
         console.log(result)
          $('.form-notification').text('Error Sending email!');
      }
- },
+ }
 });
 // Prevents default submission of the form after clicking on the submit button. 
 return false;   
