@@ -5,10 +5,11 @@
     <meta name="keywors" content="joshua garia web-development design build">
     <meta name="development" content="Personal site of joshua garcia.Display skills of web development.">
     <meta name="author" content="Joshua Garcia">
-    <link rel="stylesheet" href="./styles/reset-style.css">
+    <!-- <link rel="stylesheet" href="./styles/reset-style.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./styles/lighting-slider.css">
-    <link rel="stylesheet" href="./styles/style-breaks.css">
+    <link rel="stylesheet" href="./styles/style-breaks.css"> -->
+    <link rel="stylesheet" href="./styles/style-collective.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
     <title>Joshua Garcia</title>
@@ -71,9 +72,8 @@
     <h3>Contact</h3>
 
     <div class="form-bin" id="form-bin">
-    <span>Message Me</span>
+    <span class="form-notification">Message Me</span>
     <form id='form' method='POST'> 
-        <span class="form-notification"></span>
         <div class="form-input-container">
      <label for="first-name">First Name</label>
      <input type="text" name="first-name" id="first-name" placeholder="first name">
