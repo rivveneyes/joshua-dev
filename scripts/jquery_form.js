@@ -8,20 +8,27 @@ $(document).ready(function() {
          method: form.attr('method'),
          data: form.serialize(),
          success: function(result){
-            console.log(result)
+        $('.error').removeClass('error')
      switch(result){
         case "fail name":
             $('.form-notification').text('Name can only contain letters,numbers,space.')
+            $('#first-name').toggleClass('error')
         break;
         case "fail email":
             $('.form-notification').text('invalid email.')
+            $('#email').toggleClass('error')
+            break;
+        case "fail message":
+            $('.form-notification').text('please add your message');
+                        $('#message').toggleClass('error')
             break;
         case "fail":
-            $('.form-notification').text('error sending message try agian.')
+            $('.form-notification').text('error sending message try agian.');
+                        $('#form').toggleClass('error')
             break;
         case "success":
-            $('.form-notification').text('Message Sent!')
-            $('#form').css('visibility',"hidden")
+            $('.form-notification').text('Message Sent!');
+            $('#form').css('visibility',"hidden");
         break;
      }
 
@@ -31,3 +38,4 @@ $(document).ready(function() {
 return false;   
 });
 });
+

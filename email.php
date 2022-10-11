@@ -8,7 +8,21 @@
         $nameCheck= nameCheck($name.$lastName);
         $emailCheck=emailCheck($email);
      
-        if ($nameCheck && $emailCheck === "success"){
+
+           if($nameCheck === "fail name"){
+             echo $nameCheck;
+             return;
+          }
+          else if($emailCheck === "fail email"){
+            echo $emailCheck;
+            return;
+         }
+            else if($message === ""){
+            echo "fail message";
+            return;
+         }
+         else if
+            ($nameCheck && $emailCheck === "success" && $message !== ""){
             $to = 'admin@joshgarcia-dev.com';
              $subject = 'Message';
              $headers = "From: ".$name." <".$email."> \r\n";
@@ -17,23 +31,10 @@
              echo $messageSent;
              return;
           }
-          else if($nameCheck === "fail name"){
-             echo $nameCheck;
-             return;
-          }
-          else if($emailCheck === "fail email"){
-            echo $emailCheck;
-            return;
-         }
         }
     
       // Set your email address where you want to receive emails. 
       // ==================================
-      //  $to = 'admin@joshgarcia-dev.com';
-      //  $subject = 'Message';
-      //  $headers = "From: ".$name." <".$email."> \r\n";
-      //  $send_email = mail($to,$subject,$message,$headers);
-      //  echo ($send_email) ? 'success' : 'error';
 
 function emailCheck($sample){
   $test =null;
@@ -49,7 +50,7 @@ return $test;
 
 function nameCheck($sample){
   $test =null;
-  if (!preg_match("/^[a-zA-Z-' ]*$/",$sample) || $sample==="") {
+  if (!preg_match("/^[a-zA-Z-' ]*$/",$sample) || $sample == "") {
     $test = "fail name";
     return $test;
   }
